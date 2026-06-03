@@ -1,44 +1,76 @@
-Privacy Policy
-Last updated: June 3, 2026
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleSum — Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 0 24px;
+      line-height: 1.7;
+      color: #1e293b;
+    }
+    h1 { font-size: 28px; margin-bottom: 8px; }
+    h2 { font-size: 18px; margin-top: 32px; color: #4f46e5; }
+    p, li { font-size: 15px; color: #475569; }
+    .updated { color: #94a3b8; font-size: 13px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
 
-SimpleSum (“the Extension”) is committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: June 3, 2026</p>
 
-1. Data We Do NOT Collect
-SimpleSum does not collect, store, or transmit any of the following:
+<p>SimpleSum (&ldquo;the Extension&rdquo;) is committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
 
-Personal identification information (name, email, phone number)
-Browsing history or visited URLs
-Page content you choose to summarize (it is sent directly to your chosen AI provider, never to us)
-API keys (stored locally in Chrome’s built-in storage)
-Usage analytics, telemetry, or crash reports
-2. Data Stored Locally
-The Extension stores the following data exclusively on your device via Chrome’s chrome.storage API:
+<h2>1. Data We Do NOT Collect</h2>
+<p>SimpleSum does <strong>not</strong> collect, store, or transmit any of the following:</p>
+<ul>
+  <li>Personal identification information (name, email, phone number)</li>
+  <li>Browsing history or visited URLs</li>
+  <li>Page content you choose to summarize (it is sent directly to your chosen AI provider, never to us)</li>
+  <li>API keys (stored locally in Chrome&rsquo;s built-in storage)</li>
+  <li>Usage analytics, telemetry, or crash reports</li>
+</ul>
 
-Your configured API provider settings (API key, base URL, model ID)
-Daily summary usage count (to enforce the free tier limit)
-Your license key (if you have purchased SimpleSum Pro)
-None of this data is synced to any external server owned by SimpleSum. Chrome may sync chrome.storage.sync data across your own devices via your Google account; this is controlled by Chrome, not by us.
+<h2>2. Data Stored Locally</h2>
+<p>The Extension stores the following data <strong>exclusively on your device</strong> via Chrome&rsquo;s <code>chrome.storage</code> API:</p>
+<ul>
+  <li>Your configured API provider settings (API key, base URL, model ID)</li>
+  <li>Daily summary usage count (to enforce the free tier limit)</li>
+  <li>Your license key (if you have purchased SimpleSum Pro)</li>
+</ul>
+<p>None of this data is synced to any external server owned by SimpleSum. Chrome may sync <code>chrome.storage.sync</code> data across your own devices via your Google account; this is controlled by Chrome, not by us.</p>
 
-3. Data Sent to Third Parties
-When you summarize a webpage, the extracted page content is sent directly from your browser to the AI provider you have configured (DeepSeek, Anthropic, OpenAI, or a custom endpoint). This connection is between you and the provider. SimpleSum does not intercept, log, or proxy these requests.
+<h2>3. Data Sent to Third Parties</h2>
+<p>When you summarize a webpage, the extracted page content is sent directly from your browser to the AI provider you have configured (DeepSeek, Anthropic, OpenAI, or a custom endpoint). This connection is between you and the provider. SimpleSum does not intercept, log, or proxy these requests.</p>
+<p>Please refer to each provider&rsquo;s privacy policy:</p>
+<ul>
+  <li><a href="https://platform.deepseek.com/privacy" target="_blank">DeepSeek Privacy Policy</a></li>
+  <li><a href="https://www.anthropic.com/privacy" target="_blank">Anthropic Privacy Policy</a></li>
+  <li><a href="https://openai.com/privacy" target="_blank">OpenAI Privacy Policy</a></li>
+</ul>
 
-Please refer to each provider’s privacy policy:
+<h2>4. Permissions</h2>
+<p>The Extension requests the following Chrome permissions:</p>
+<ul>
+  <li><strong>activeTab</strong> — to access the current page&rsquo;s content only when you trigger a summary</li>
+  <li><strong>storage</strong> — to save your settings and daily usage count locally</li>
+  <li><strong>clipboardWrite</strong> — to copy the summary to your clipboard when you click &ldquo;Copy&rdquo;</li>
+  <li><strong>Host permissions (https://*/*)</strong> — to send API requests to your chosen AI provider</li>
+</ul>
 
-DeepSeek Privacy Policy
-Anthropic Privacy Policy
-OpenAI Privacy Policy
-4. Permissions
-The Extension requests the following Chrome permissions:
+<h2>5. License &amp; Payment</h2>
+<p>SimpleSum Pro subscriptions are processed through Lemon Squeezy. SimpleSum does not handle or store your payment information. Your license key is validated locally using a checksum algorithm; no external validation server is used.</p>
 
-activeTab — to access the current page’s content only when you trigger a summary
-storage — to save your settings and daily usage count locally
-clipboardWrite — to copy the summary to your clipboard when you click “Copy”
-Host permissions (https://*/*) — to send API requests to your chosen AI provider
-5. License & Payment
-SimpleSum Pro subscriptions are processed through Lemon Squeezy. SimpleSum does not handle or store your payment information. Your license key is validated locally using a checksum algorithm; no external validation server is used.
+<h2>6. Changes to This Policy</h2>
+<p>We may update this policy from time to time. Changes will be reflected on this page with a new &ldquo;Last updated&rdquo; date.</p>
 
-6. Changes to This Policy
-We may update this policy from time to time. Changes will be reflected on this page with a new “Last updated” date.
+<h2>7. Contact</h2>
+<p>If you have questions about this policy, contact us at <a href="mailto:privacy@simplesum.ai">privacy@simplesum.ai</a>.</p>
 
-7. Contact
-If you have questions about this policy, contact us at privacy@simplesum.ai.
+</body>
+</html>
