@@ -1,0 +1,44 @@
+Privacy Policy
+Last updated: June 3, 2026
+
+SimpleSum (“the Extension”) is committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.
+
+1. Data We Do NOT Collect
+SimpleSum does not collect, store, or transmit any of the following:
+
+Personal identification information (name, email, phone number)
+Browsing history or visited URLs
+Page content you choose to summarize (it is sent directly to your chosen AI provider, never to us)
+API keys (stored locally in Chrome’s built-in storage)
+Usage analytics, telemetry, or crash reports
+2. Data Stored Locally
+The Extension stores the following data exclusively on your device via Chrome’s chrome.storage API:
+
+Your configured API provider settings (API key, base URL, model ID)
+Daily summary usage count (to enforce the free tier limit)
+Your license key (if you have purchased SimpleSum Pro)
+None of this data is synced to any external server owned by SimpleSum. Chrome may sync chrome.storage.sync data across your own devices via your Google account; this is controlled by Chrome, not by us.
+
+3. Data Sent to Third Parties
+When you summarize a webpage, the extracted page content is sent directly from your browser to the AI provider you have configured (DeepSeek, Anthropic, OpenAI, or a custom endpoint). This connection is between you and the provider. SimpleSum does not intercept, log, or proxy these requests.
+
+Please refer to each provider’s privacy policy:
+
+DeepSeek Privacy Policy
+Anthropic Privacy Policy
+OpenAI Privacy Policy
+4. Permissions
+The Extension requests the following Chrome permissions:
+
+activeTab — to access the current page’s content only when you trigger a summary
+storage — to save your settings and daily usage count locally
+clipboardWrite — to copy the summary to your clipboard when you click “Copy”
+Host permissions (https://*/*) — to send API requests to your chosen AI provider
+5. License & Payment
+SimpleSum Pro subscriptions are processed through Lemon Squeezy. SimpleSum does not handle or store your payment information. Your license key is validated locally using a checksum algorithm; no external validation server is used.
+
+6. Changes to This Policy
+We may update this policy from time to time. Changes will be reflected on this page with a new “Last updated” date.
+
+7. Contact
+If you have questions about this policy, contact us at privacy@simplesum.ai.
