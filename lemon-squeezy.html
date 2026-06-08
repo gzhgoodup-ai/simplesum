@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleSum Pro — Unlimited AI Summaries</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .container { background: white; border-radius: 20px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+    .header { text-align: center; margin-bottom: 40px; }
+    .logo { font-size: 32px; font-weight: 800; background: linear-gradient(135deg, #4f46e5, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+    .tagline { color: #64748b; font-size: 18px; }
+    .pricing-card {
+      background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      border: 1px solid #cbd5e1;
+    }
+    .price { font-size: 48px; font-weight: 800; color: #1e293b; }
+    .period { color: #64748b; font-size: 18px; }
+    .features { list-style: none; margin: 25px 0; }
+    .features li { padding: 10px 0; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; }
+    .features li:last-child { border: none; }
+    .check { color: #10b981; font-weight: bold; margin-right: 12px; }
+    .btn-buy {
+      display: block;
+      width: 100%;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 18px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .btn-buy:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+    }
+    .license-section {
+      background: #fef3c7;
+      border: 1px solid #fbbf24;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    .license-code {
+      font-family: 'Courier New', monospace;
+      background: #1e293b;
+      color: #f1f5f9;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-align: center;
+      margin: 15px 0;
+      user-select: all;
+    }
+    .copy-btn {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .copy-btn:hover { background: #2563eb; }
+    .note { color: #64748b; font-size: 14px; margin-top: 20px; text-align: center; }
+    .footer { margin-top: 40px; text-align: center; color: #94a3b8; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="logo">SimpleSum Pro</h1>
+      <p class="tagline">Unlock unlimited AI‑powered summaries for any webpage</p>
+    </div>
+
+    <div class="pricing-card">
+      <div style="display: flex; align-items: baseline; justify-content: center;">
+        <span class="price">$4.99</span>
+        <span class="period">/month</span>
+      </div>
+      <ul class="features">
+        <li><span class="check">✓</span> Unlimited summaries per day</li>
+        <li><span class="check">✓</span> No daily 50‑limit cap</li>
+        <li><span class="check">✓</span> Priority AI model selection</li>
+        <li><span class="check">✓</span> Early access to new features</li>
+        <li><span class="check">✓</span> Cancel anytime</li>
+      </ul>
+      <a href="#" id="btn-purchase" class="btn-buy">Get SimpleSum Pro — $4.99/month</a>
+      <p class="note">No hidden fees. You'll receive a license key immediately after payment.</p>
+    </div>
+
+    <div class="license-section" id="license-section">
+      <h3>How it works</h3>
+      <p style="text-align:center; font-size:15px;">After payment, your license key will be instantly sent to your email. Paste it into the SimpleSum extension to unlock unlimited summaries.</p>
+      <p style="margin-top: 15px; font-size: 14px;">
+        <strong>Next steps:</strong><br>
+        1. Click the <strong>Get SimpleSum Pro</strong> button above<br>
+        2. Complete payment on Lemon Squeezy<br>
+        3. Check your email for the license key<br>
+        4. Paste it in Chrome extension Settings → License
+      </p>
+    </div>
+
+    <div class="footer">
+      <p>Powered by Lemon Squeezy · 5% + $0.50 per transaction · <a href="mailto:support@simplesum.ai">support@simplesum.ai</a></p>
+    </div>
+  </div>
+
+  <script>
+    // Replace with your real Lemon Squeezy checkout URL after creating the product
+    const LEMON_SQUEEZY_CHECKOUT_URL = 'https://simplesum.lemonsqueezy.com/checkout/buy/REPLACE_WITH_PRODUCT_ID';
+
+    document.getElementById('btn-purchase').addEventListener('click', (e) => {
+      e.preventDefault();
+      window.open(LEMON_SQUEEZY_CHECKOUT_URL, '_blank');
+    });
+  </script>
+</body>
+</html>
